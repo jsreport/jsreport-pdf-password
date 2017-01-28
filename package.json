@@ -1,0 +1,67 @@
+{
+  "name": "jsreport-pdf-password",
+  "version": "0.0.0",
+  "description": "jsreport extension adding password protection to PDF reports",
+  "main": "index.js",
+  "scripts": {
+    "start": "jsreport-studio-start --httpPort 4800",
+    "test": "mocha test --timeout 5000 && standard",
+    "test:watch": "mocha test --watch",
+    "build": "jsreport-studio-build",
+    "prepublish": "in-publish && jsreport-studio-build || not-in-publish"
+  },
+  "homepage": "https://github.com/jsreport/jsreport-pdf-password",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsreport/jsreport-pdf-password.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jsreport/jsreport-pdf-password/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jsreport",
+    "pdf",
+    "pdf protection"
+  ],
+  "author": "BJR Matos <bjrmatos@gmail.com> (https://github.com/bjrmatos)",
+  "contributors": [
+    "BJR Matos <bjrmatos@gmail.com> (https://github.com/bjrmatos)",
+    "Jan Blaha"
+  ],
+  "files": [
+    "lib",
+    "studio",
+    "index.js",
+    "jsreport.config.js"
+  ],
+  "standard": {
+    "ignore": [
+      "main.js"
+    ],
+    "parser": "babel-eslint",
+    "env": {
+      "node": true,
+      "mocha": true,
+      "browser": true
+    }
+  },
+  "dependencies": {
+    "bluebird": "3.4.7",
+    "hummus": "1.0.68",
+    "object-assign": "4.1.1",
+    "uuid": "3.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "7.1.1",
+    "eslint": "3.14.0",
+    "eslint-config-standard-jsx": "3.2.0",
+    "eslint-plugin-babel": "4.0.1",
+    "in-publish": "2.0.0",
+    "jsreport-core": "1.0.10",
+    "jsreport-studio-dev": "1.0.2",
+    "mocha": "3.2.0",
+    "should": "11.1.2",
+    "standard": "8.6.0"
+  }
+}
