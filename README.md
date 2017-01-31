@@ -38,9 +38,10 @@ To use `pdf-password` in template rendering set the available [options](#options
 - `ownerPassword` `(String)` -> The owner password is used to protect the pdf file from modifications
 - `protectionLevel` `(Number)` -> Specifies the level of protection for the pdf, posibles values are:
 
+  - `-1` -> none, the `default` level will be used
   - `3` -> allow the user to print the document
   - `4` -> allow modification of the document
-  - `5` -> allow copying or extracting text and graphics from the document
+  - `5` -> allow copying or extracting text and graphics from the document, this is the `default` used if none is set
   - `6` -> allow adding text annotations, fill form field
   - `9` -> allow filling forms
   - `10` -> allow extracting text and graphics in support of accessibility only
