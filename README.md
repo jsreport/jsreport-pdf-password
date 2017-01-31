@@ -14,7 +14,7 @@ Adding `pdf-password` extension will let you add password protection to PDF rend
 
 ## Usage
 
-To use `pdf-password` in template rendering set the available [options](#options) for password protection the rendering request.
+To use `pdf-password` in template rendering set the available [options](#options) for password protection in the request.
 
 ```js
 {
