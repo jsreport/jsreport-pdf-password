@@ -3,3 +3,11 @@ node_js:
   - "0.12"
   - "4"
   - "6"
+install:
+  - export DISPLAY=':99.0'
+  - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+  - npm install
+addons:
+  apt:
+    packages:
+      - xvfb
