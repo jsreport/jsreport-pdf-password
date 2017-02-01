@@ -18,7 +18,6 @@ describe('pdf password', function () {
 
     reporter.use(require('jsreport-templates')())
     reporter.use(require('jsreport-phantom-pdf')())
-    reporter.use(require('jsreport-electron-pdf')())
     reporter.use(require('../')())
 
     return reporter.init()
@@ -119,6 +118,11 @@ pdfRecipesToTest.forEach(function (recipe) {
         rootDirectory: path.join(__dirname, '../'),
         tempDirectory: tempDirectory
       })
+
+      reporter.use(require('jsreport-templates')())
+      reporter.use(require('jsreport-phantom-pdf')())
+      reporter.use(require('jsreport-electron-pdf')())
+      reporter.use(require('../')())
 
       return reporter.init()
     })
