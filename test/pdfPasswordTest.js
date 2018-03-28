@@ -35,7 +35,7 @@ describe('pdf password', function () {
       }
     }
 
-    return reporter.render(request, {}).then(function (response) {
+    return reporter.render(request).then(function (response) {
       should(response.content.toString()).containEql('%PDF')
     })
   })
@@ -52,7 +52,7 @@ describe('pdf password', function () {
       }
     }
 
-    reporter.render(request, {}).then(function () {
+    reporter.render(request).then(function () {
       done(new Error('render should have thrown an error'))
     }).catch(function (err) {
       if (err) {
@@ -75,7 +75,7 @@ describe('pdf password', function () {
       }
     }
 
-    reporter.render(request, {}).then(function () {
+    reporter.render(request).then(function () {
       done(new Error('render should have thrown an error'))
     }).catch(function (err) {
       if (err) {
@@ -99,7 +99,7 @@ describe('pdf password', function () {
       }
     }
 
-    reporter.render(request, {}).then(function () {
+    reporter.render(request).then(function () {
       done(new Error('render should have thrown an error'))
     }).catch(function (err) {
       if (err) {
@@ -140,7 +140,7 @@ pdfRecipesToTest.forEach(function (recipe) {
         }
       }
 
-      return reporter.render(request, {}).then(function (response) {
+      return reporter.render(request).then(function (response) {
         should(response.content.toString()).containEql('%PDF')
       })
     })
@@ -158,7 +158,7 @@ pdfRecipesToTest.forEach(function (recipe) {
         }
       }
 
-      return reporter.render(request, {}).then(function (response) {
+      return reporter.render(request).then(function (response) {
         var pdfName = path.join(tempDirectory, 'pdf-with-password-source-' + recipe + '.pdf')
         var pdfReader
 

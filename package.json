@@ -19,6 +19,9 @@
     "url": "https://github.com/jsreport/jsreport-pdf-password/issues"
   },
   "license": "MIT",
+  "engines": {
+    "node": ">=8.9"
+  },
   "keywords": [
     "jsreport",
     "pdf",
@@ -48,25 +51,25 @@
     }
   },
   "dependencies": {
-    "bluebird": "3.4.7",
-    "hummus": "1.0.68",
+    "bluebird": "3.5.1",
+    "hummus": "1.0.83",
     "object-assign": "4.1.1",
-    "uuid": "3.0.1"
+    "uuid": "3.2.1"
   },
   "devDependencies": {
-    "babel-eslint": "7.1.1",
-    "electron": "1.4.14",
-    "eslint": "3.14.0",
-    "eslint-config-standard-jsx": "3.2.0",
-    "eslint-plugin-babel": "4.0.1",
+    "babel-eslint": "8.2.2",
+    "electron": "1.8.4",
+    "eslint": "4.19.1",
+    "eslint-config-standard-jsx": "5.0.0",
+    "eslint-plugin-babel": "4.1.2",
     "in-publish": "2.0.0",
-    "jsreport-core": "1.0.10",
-    "jsreport-electron-pdf": "2.2.4",
-    "jsreport-phantom-pdf": "1.3.0",
-    "jsreport-studio-dev": "1.0.2",
-    "jsreport-templates": "1.0.2",
-    "mocha": "3.2.0",
-    "should": "11.1.2",
-    "standard": "8.6.0"
+    "jsreport-core": "github:jsreport/jsreport-core#2.0.0-beta",
+    "jsreport-electron-pdf": "github:bjrmatos/jsreport-electron-pdf#2.0.0-beta",
+    "jsreport-phantom-pdf": "github:jsreport/jsreport-phantom-pdf#2.0.0-beta",
+    "jsreport-studio-dev": "1.1.2",
+    "jsreport-templates": "github:jsreport/jsreport-templates#2.0.0-beta",
+    "mocha": "5.0.5",
+    "should": "13.2.1",
+    "standard": "11.0.1"
   }
 }
