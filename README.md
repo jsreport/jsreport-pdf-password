@@ -10,7 +10,7 @@ Adding `pdf-password` extension will let you add password protection to PDF rend
 
 ## Installation
 
-> **npm install jsreport-phantom-pdf**
+> **npm install jsreport-pdf-password**
 
 ## Usage
 
