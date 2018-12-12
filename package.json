@@ -51,10 +51,9 @@
     }
   },
   "dependencies": {
-    "bluebird": "3.5.1",
-    "hummus": "1.0.83",
+    "hummus": "1.0.95",
     "object-assign": "4.1.1",
-    "uuid": "3.2.1"
+    "uuid": "3.3.2"
   },
   "devDependencies": {
     "babel-eslint": "8.2.2",
@@ -63,13 +62,13 @@
     "eslint-config-standard-jsx": "5.0.0",
     "eslint-plugin-babel": "4.1.2",
     "in-publish": "2.0.0",
-    "jsreport-core": "2.0.1",
+    "jsreport-core": "2.3.2",
     "jsreport-electron-pdf": "3.0.0",
-    "jsreport-phantom-pdf": "2.0.0",
-    "jsreport-studio-dev": "1.1.2",
-    "jsreport-templates": "2.0.0",
-    "mocha": "5.0.5",
-    "should": "13.2.1",
+    "jsreport-phantom-pdf": "2.1.4",
+    "jsreport-studio-dev": "1.3.2",
+    "jsreport-templates": "2.1.0",
+    "mocha": "5.2.0",
+    "should": "13.2.3",
     "standard": "11.0.1"
   }
 }
