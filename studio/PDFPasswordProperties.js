@@ -40,6 +40,7 @@ class PDFPasswordProperties extends Component {
                 <label>Password</label>
                 <input
                   type='password'
+                  autoComplete='off'
                   placeholder='write a password'
                   value={pdfPassword.password || ''}
                   onChange={(v) => changePDFPassword({ password: v.target.value })}
@@ -49,6 +50,7 @@ class PDFPasswordProperties extends Component {
                 <label>Owner Password</label>
                 <input
                   type='password'
+                  autoComplete='off'
                   placeholder='write a password'
                   value={pdfPassword.ownerPassword || ''}
                   onChange={(v) => changePDFPassword({ ownerPassword: v.target.value })}
