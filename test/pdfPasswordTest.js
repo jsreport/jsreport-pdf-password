@@ -5,7 +5,7 @@ var hummus = require('hummus')
 var Reporter = require('jsreport-core')
 
 var tempDirectory = path.join(__dirname, '/temp')
-var pdfRecipesToTest = ['phantom-pdf', 'electron-pdf']
+var pdfRecipesToTest = ['phantom-pdf', 'chrome-pdf']
 
 describe('pdf password', function () {
   var reporter
@@ -121,7 +121,7 @@ pdfRecipesToTest.forEach(function (recipe) {
 
       reporter.use(require('jsreport-templates')())
       reporter.use(require('jsreport-phantom-pdf')())
-      reporter.use(require('jsreport-electron-pdf')())
+      reporter.use(require('jsreport-chrome-pdf')())
       reporter.use(require('../')())
 
       return reporter.init()
