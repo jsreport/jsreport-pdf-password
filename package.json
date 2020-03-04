@@ -1,6 +1,6 @@
 {
   "name": "jsreport-pdf-password",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "jsreport extension adding password protection to PDF reports",
   "main": "index.js",
   "scripts": {
