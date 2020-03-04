@@ -17,6 +17,7 @@ describe('pdf password', function () {
     })
 
     reporter.use(require('jsreport-templates')())
+    reporter.use(require('jsreport-chrome-pdf')())
     reporter.use(require('jsreport-phantom-pdf')())
     reporter.use(require('../')())
 
@@ -27,10 +28,9 @@ describe('pdf password', function () {
     var request = {
       template: {
         content: 'Test',
-        recipe: 'phantom-pdf',
+        recipe: 'chrome-pdf',
         engine: 'none',
         pdfPassword: {
-          active: false
         }
       }
     }
