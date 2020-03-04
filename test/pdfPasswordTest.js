@@ -40,27 +40,6 @@ describe('pdf password', function () {
     })
   })
 
-  it('should fail when rendering and password option is not specified', function (done) {
-    var request = {
-      template: {
-        content: 'Test',
-        recipe: 'phantom-pdf',
-        engine: 'none',
-        pdfPassword: {
-          active: true
-        }
-      }
-    }
-
-    reporter.render(request).then(function () {
-      done(new Error('render should have thrown an error'))
-    }).catch(function (err) {
-      if (err) {
-        done()
-      }
-    })
-  })
-
   it('should fail when rendering and trying to use a protection level with no owner password', function (done) {
     var request = {
       template: {
